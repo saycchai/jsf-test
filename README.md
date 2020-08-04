@@ -1,7 +1,7 @@
 # jsf-test
-JSF test
 
 chmod +x *.sh
+
 ./buildAndRun.sh
 
 
