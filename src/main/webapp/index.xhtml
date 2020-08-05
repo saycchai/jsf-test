@@ -20,15 +20,20 @@
 			<p:ajax event="filter" process="@this" update="@this" global="false"
 				skipChildren="false" />
 
-			<p:column headerText="Dropdown" sortBy="#{item.dd}" filterBy="#{item.dd}"
-				filterMatchMode="contains">
+			<p:column headerText="Dropdown" sortBy="#{item.dd}"
+				filterBy="#{item.dd}" filterMatchMode="contains">
 				<p:selectOneMenu id="Dropdown" value="#{item.dd}" required="false"
-					label="Dropdown" style="width: 100%">
+					label="Dropdown" style="width: 90%">
 
 					<f:selectItem itemValue="#{null}" itemLabel="" />
 					<f:selectItems value="#{sampleBean.dropDown.entrySet()}"
 						var="entry" itemValue="#{entry.value}" itemLabel="#{entry.key}" />
 				</p:selectOneMenu>
+			</p:column>
+			<p:column id="InputTextHeader" headerText="Input Text"
+				sortBy="#{item.inputText}" filterBy="#{item.inputText}"
+				filterMatchMode="contains">
+				<p:inputText id="InputText" value="#{item.inputText}" />
 			</p:column>
 		</p:dataTable>
 	</h:form>

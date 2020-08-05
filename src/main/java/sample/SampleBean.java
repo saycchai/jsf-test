@@ -42,6 +42,7 @@ public class SampleBean implements java.io.Serializable {
 	public static class TableObject 
 	{
 		private String dd;
+		private String inputText;
 
 		public String getDd() {
 			return dd;
@@ -49,6 +50,14 @@ public class SampleBean implements java.io.Serializable {
 
 		public void setDd(String dd) {
 			this.dd = dd;
+		}
+
+		public String getInputText() {
+			return inputText;
+		}
+
+		public void setInputText(String inputText) {
+			this.inputText = inputText;
 		}
 		
 	}
